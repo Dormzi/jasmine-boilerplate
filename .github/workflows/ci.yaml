@@ -6,14 +6,14 @@ jobs:
     steps:
         - name: Checkout
           uses: actions/checkout@v2
-        - name: Install
-          uses: ianwalter/puppeteer-container@v4.0.0
-          with:
-            args: npm install
         - name: Test
-          uses: ianwalter/puppeteer-container@v4.0.0
-          with:
-            args: npm run test:local
+          run: |
+            docker run \
+              -v ${{github.workspace}}:/test \
+              --entrypoint "/bin/sh" \
+              --rm \
+              ianwalter/puppeteer:v4.0.0 \
+              -c "cd /test && yarn && yarn test:local"
         - uses: actions/upload-artifact@v1
           if: failure()
           with:

@@ -107,9 +107,9 @@ export const config: WebdriverIO.Config = {
     //
     // Options to be passed to Jasmine.
     // @ts-expect-error fixed in https://github.com/webdriverio/webdriverio/pull/6472
-    jasmineNodeOpts: {
+    jasmineOpts: {
         // Jasmine default timeout
-        defaultTimeoutInterval: 60000,
+        defaultTimeoutInterval: 60 * 1000 * 10,
         //
         // The Jasmine framework allows interception of each assertion in order to log the state of the application
         // or website depending on the result. For example, it is pretty handy to take a screenshot every time
