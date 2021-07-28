@@ -1,4 +1,4 @@
-Jasmine Boilerplate [![Build Status](https://travis-ci.org/webdriverio/jasmine-boilerplate.svg?branch=master)](https://travis-ci.org/webdriverio/jasmine-boilerplate) ![CI](https://github.com/webdriverio/jasmine-boilerplate/workflows/CI/badge.svg?event=push)
+Jasmine Boilerplate [![Build Status](https://travis-ci.org/Dormzi/jasmine-boilerplate.svg?branch=master)](https://travis-ci.org/webdriverio/jasmine-boilerplate) ![CI](https://github.com/Dormzi/jasmine-boilerplate/workflows/CI/badge.svg?event=push)
 ===================
 
 Boilerplate project to run WebdriverIO tests with Jasmine using latest ES2016 features and the page objects pattern.
@@ -21,4 +21,3 @@ Choose one of the following options:
 - ESNext ready
 - Integration with [Sauce Labs](https://saucelabs.com/)
 - Example using [GitHub Actions](https://github.com/features/actions)
-
